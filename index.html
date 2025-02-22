@@ -10,6 +10,10 @@
     </style>
 </head>
 <body>
+    <h1>Welcome to my personal webiste!</h1>
+    <p>Here you can find more details about me,</p>
+    <p>about my professional and academic background,</p>
+    </p>as well as about my hobbies and areas of my interest.</p>
     <div>
         <select id="language-selector" onchange="changeLanguage()">
             <option value="en">English</option>
@@ -17,25 +21,19 @@
         </select>
     </div>
 
-    <h1>Welcome to my personal space!</h1>
-      <p>Here you can explore more about my personal details,</p>
-      <p>professional and academic journey, hobbies, and other areas of my interest.</p>
-
-
     <script>
         function changeLanguage() {
             var lang = document.getElementById("language-selector").value;
             if (lang === "el") {
                 document.documentElement.lang = "el"; // Change language to Greek
                 document.querySelector("h1").textContent = "Καλώς ήρθατε στην προσωπική μου ιστοσελίδα!";
-                document.querySelector("p").textContent = "Είμαι ο Θανάσης και εδώ θα βρείτε περισσότερες πληροφορίες για εμένα. Πλοηγείτε ελεύθερα, καλή διασκέδαση!";
+                document.querySelector("p").textContent = "Είμαι ο Θανάσης και εδώ θα βρείτε περισσότερες πληροφορίες για εμένα. Πλοηγηθείτε ελεύθερα, καλή διασκέδαση!";
             } else {
                 document.documentElement.lang = "en"; // Change language to English
-                document.querySelector("h1").textContent = "Welcome to My Website!";
-                document.querySelector("p").textContent = "Here you can explore more about my personal details,professional and academic journey, hobbies, and other areas of my interest.";
+                document.querySelector("h1").textContent = "Welcome to my personal webiste!";
+                document.querySelector("p").textContent = "Here you can find more details about me, about my professional and academic background, as well as about my hobbies and areas of my interest. Relax, lay back and enjoy your flight";
             }
         }
     </script>
 </body>
 </html>
-
