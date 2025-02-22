@@ -7,7 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <style>
         body { font-family: Comfortaa, serif; text-align: center; padding: 50px; }
-        h1 { color: #04055c; }
+        h1 { color: #050da8; }
+        p { color: #070b5e; }
+        #language-selector {
+            font-family: 'Comfortaa', serif, monospace;
+            color: #693206;/* Font for the language selector */
+        }
     </style>
 </head>
 <body>
@@ -16,6 +21,8 @@
     <p>about my professional and academic background,</p>
     <p>as well as about my hobbies and areas of my interest.</p>
     <p>Relax, lay back and enjoy your flight!</p>
+    <p> </p>
+    <p>____________Thanasis Ioannidis____________</p>
 
     <div>
         <select id="language-selector" onchange="changeLanguage()">
@@ -34,6 +41,8 @@
                 document.querySelectorAll("p")[1].textContent = "για το επαγγελματικό και ακαδημαϊκό μου υπόβαθρο,";
                 document.querySelectorAll("p")[2].textContent = "καθώς και για τα χόμπι και τα ενδιαφέροντά μου.";
                 document.querySelectorAll("p")[3].textContent = "Καλή διασκέδαση!";
+                document.querySelectorAll("p")[4].textContent = " ";
+                document.querySelectorAll("p")[5].textContent = "____________Θανάσης Ιωαννίδης____________";
             } else {
                 document.documentElement.lang = "en"; // Change language to English
                 document.querySelector("h1").textContent = "Welcome to my personal website!";
@@ -41,6 +50,8 @@
                 document.querySelectorAll("p")[1].textContent = "about my professional and academic background,";
                 document.querySelectorAll("p")[2].textContent = "as well as about my hobbies and areas of my interest.";
                 document.querySelectorAll("p")[3].textContent = "Relax, lay back and enjoy your flight!";
+                document.querySelectorAll("p")[4].textContent = " ";
+                document.querySelectorAll("p")[5].textContent = "____________Thanasis Ioannidis____________";
             }
         }
     </script>
